@@ -1,9 +1,7 @@
 #!/bin/bash
 
-echo $HG_ARGS
-echo $HG_PATS
 #post-push
-if [ $HG_PATS = "bitbucket" ]
+if [ $HG_ARGS = "push bitbucket" ]
 then 
     hg push github
 fi
