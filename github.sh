@@ -8,9 +8,7 @@
 if [[ $HG_ARGS = "push bitbucket" ]]
 then 
     #post-push to bitbucket
-    echo 
     hg push github --quiet
-    echo 
 
 elif [[ $HG_ARGS = "push github" ]]
 then 
